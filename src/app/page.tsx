@@ -1,9 +1,9 @@
-import { ModeToggle } from "@/components/custom/ToggleTheme";
+import LoginCard from "@/components/custom/Login/LoginCard";
 
 export default function Home() {
   return (
-    <div>
-      <ModeToggle />
-    </div>
+    <>
+      <LoginCard />
+    </>
   );
 }
