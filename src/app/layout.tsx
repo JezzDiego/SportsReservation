@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { ThemeProvider } from "@/contexts/theme-provider";
 import ToggleTheme from "@/components/custom/Theme/ToggleTheme";
+import PrivateRoute from "@/templates/PrivateRoute";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
         >
           <div className="m-6">
             <ToggleTheme />
-            {children}
+            <PrivateRoute>{children}</PrivateRoute>
           </div>
         </ThemeProvider>
       </body>

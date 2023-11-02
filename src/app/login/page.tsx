@@ -18,10 +18,11 @@ export default function Home() {
             <Label htmlFor="email">Email</Label>
             <Input id="email" placeholder="Digite seu email" />
           </div>
+
           <div className="flex flex-col space-y-1.5">
             <Label htmlFor="password">Senha</Label>
             <div className="relative">
-              <ShowPassword />
+              <ShowPassword id="password" placeholder="Digite sua senha" />
             </div>
           </div>
         </div>

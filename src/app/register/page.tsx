@@ -31,10 +31,21 @@ export default function Home() {
             <Label htmlFor="email">Email</Label>
             <Input id="email" placeholder="Digite o email institucional" />
           </div>
+
           <div className="flex flex-col space-y-1.5">
             <Label htmlFor="password">Senha</Label>
             <div className="relative">
-              <PasswordInput />
+              <PasswordInput id="password" placeholder="Digite sua senha" />
+            </div>
+          </div>
+
+          <div className="flex flex-col space-y-1.5">
+            <Label htmlFor="retype-password">Senha</Label>
+            <div className="relative">
+              <PasswordInput
+                id="retype-password"
+                placeholder="Confirme sua senha"
+              />
             </div>
           </div>
         </div>
