@@ -33,6 +33,10 @@ export default function Home() {
           <a className="underline" href="/register">
             Registre-se
           </a>
+          <br />
+          <a className="underline" href="/forgot-password">
+            Esqueci minha senha
+          </a>
         </CardDescription>
       </div>
     </AccountCard>
