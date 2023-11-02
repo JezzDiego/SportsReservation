@@ -5,7 +5,7 @@ import { EyeIcon, EyeOffIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-export default function ShowPassword() {
+export default function PasswordInput() {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <>
