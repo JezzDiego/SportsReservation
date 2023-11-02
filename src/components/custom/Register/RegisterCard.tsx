@@ -51,7 +51,7 @@ export default function RegisterCard() {
         <div className="mt-4">
           <CardDescription>
             Já tem uma conta?{" "}
-            <a className="underline" href="/">
+            <a className="underline" href="/login">
               Login
             </a>
           </CardDescription>

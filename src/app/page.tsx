@@ -1,9 +1,3 @@
-import LoginCard from "@/components/custom/Login/LoginCard";
-
 export default function Home() {
-  return (
-    <>
-      <LoginCard />
-    </>
-  );
+  return <h1>Hello</h1>;
 }
