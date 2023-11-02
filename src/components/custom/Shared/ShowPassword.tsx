@@ -15,13 +15,17 @@ export default function ShowPassword() {
         placeholder="Digite sua senha"
       />
       <Button
-        className="absolute top-1/2 right-0 transform -translate-y-1/2"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent"
         onClick={(e) => {
           e.preventDefault();
           setShowPassword(!showPassword);
         }}
       >
-        {showPassword ? <EyeOffIcon /> : <EyeIcon />}
+        {showPassword ? (
+          <EyeOffIcon size={18} className="text-muted-foreground" />
+        ) : (
+          <EyeIcon size={18} className="text-muted-foreground" />
+        )}
       </Button>
     </>
   );
