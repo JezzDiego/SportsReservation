@@ -12,7 +12,7 @@ export default function PrivateRoute({
   const { push } = useRouter();
   const routeName = usePathname();
   const isPublic = isPublicRoute(routeName);
-  const isUserAuthenticated = false;
+  const isUserAuthenticated = true;
 
   useEffect(() => {
     if (!isUserAuthenticated && !isPublic) {
